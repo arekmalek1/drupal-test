@@ -1,0 +1,5 @@
+entity.dictionary_test_type.collection:
+  title: 'Dictionary Test - słownik'
+  parent: system.admin_structure
+  description: 'Zarządzanie słownikiem'
+  route_name: entity.dictionary_test_type.collection

@@ -1,0 +1,15 @@
+id: dictionary_resource_dictionaries
+plugin_id: 'dictionary_resource_dictionaries'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+dependencies:
+  module:
+    - user
+    - serialization
+    - basic_auth

@@ -1,0 +1,12 @@
+dictionary_test.dictionary_test_type.*:
+  type: config_entity
+  label: 'Dictionary Test type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

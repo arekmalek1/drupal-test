@@ -1,0 +1,11 @@
+dictionary_test.type_add:
+  route_name: entity.dictionary_test_type.add_form
+  title: 'Dodaj nowy typ słownika'
+  appears_on:
+    - entity.dictionary_test_type.collection
+
+dictionary_test.add_page:
+  route_name: entity.dictionary_test.add_page
+  title: 'Dodaj nowy wypis do słownika'
+  appears_on:
+    - entity.dictionary_test.collection

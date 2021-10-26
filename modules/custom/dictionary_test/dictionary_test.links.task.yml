@@ -1,0 +1,26 @@
+entity.dictionary_test.view:
+  title: View
+  route_name: entity.dictionary_test.canonical
+  base_route: entity.dictionary_test.canonical
+entity.dictionary_test.edit_form:
+  title: Edit
+  route_name: entity.dictionary_test.edit_form
+  base_route: entity.dictionary_test.canonical
+entity.dictionary_test.delete_form:
+  title: Delete
+  route_name: entity.dictionary_test.delete_form
+  base_route: entity.dictionary_test.canonical
+  weight: 10
+entity.dictionary_test.collection:
+  title: Dictionary Test
+  route_name: entity.dictionary_test.collection
+  base_route: system.admin_content
+  weight: 10
+entity.dictionary_test_type.edit_form:
+  title: Edit
+  route_name: entity.dictionary_test_type.edit_form
+  base_route: entity.dictionary_test_type.edit_form
+entity.dictionary_test_type.collection:
+  title: List
+  route_name: entity.dictionary_test_type.collection
+  base_route: entity.dictionary_test_type.collection

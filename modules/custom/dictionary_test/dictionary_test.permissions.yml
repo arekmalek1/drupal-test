@@ -1,0 +1,14 @@
+administer dictionary test types:
+  title: 'Administer dictionary test types'
+  description: 'Maintain the types of dictionary test entity.'
+  restrict access: true
+access dictionary test overview:
+  title: 'Access dictionary test overview page'
+delete dictionary test:
+  title: Delete dictionary test
+create dictionary test:
+  title: Create dictionary test
+view dictionary test:
+  title: View dictionary test
+edit dictionary test:
+  title: Edit dictionary test
