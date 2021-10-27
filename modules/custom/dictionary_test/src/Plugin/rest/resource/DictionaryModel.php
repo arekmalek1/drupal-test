@@ -29,11 +29,11 @@ class DictionaryModel
   public static function fromEntity(DictionaryTest $dictionary): self
   {
       return new self(
-        $dictionary->id(),
-        $dictionary->bundle(),
-        $dictionary->getTitle(),
-        $dictionary->get('field_wyraz')->value,
-        $dictionary->getCreatedTime()
+	      $dictionary->id(),
+	      $dictionary->bundle(),
+	      $dictionary->getTitle(),
+	      $dictionary->get('field_wyraz')->value,
+	      $dictionary->getCreatedTime()
       );
   }
 
