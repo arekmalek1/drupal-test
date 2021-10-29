@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\dictionary_test\Plugin\rest\resource;
 
 use Drupal\Core\Entity\EntityStorageInterface;
@@ -66,6 +68,6 @@ class DictionaryResource extends ResourceBase
             $result[] = DictionaryModel::fromEntity($item)->toArray();
         }
 
-        return new ResourceResponse($result);
+        return new ResourceResponse(['data' => $result]);
     }
 }
