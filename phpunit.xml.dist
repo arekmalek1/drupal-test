@@ -7,7 +7,7 @@
   >
   <php>
     <env name="SIMPLETEST_BASE_URL" value="http://amalek.test"/>
-    <env name="SIMPLETEST_DB" value="mysql://amalek:rootroot@localhost/drupal_test#"/>
+    <env name="SIMPLETEST_DB" value="mysql://user:pass@localhost/drupal_test#"/>
   </php>
   <testsuites>
     <testsuite name="amalek">
