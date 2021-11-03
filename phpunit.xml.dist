@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    bootstrap="core/tests/bootstrap.php"
+    colors="true"
+    stopOnError="true"
+    stopOnFailure="true"
+  >
+  <php>
+    <env name="SIMPLETEST_BASE_URL" value="http://amalek.test"/>
+    <env name="SIMPLETEST_DB" value="mysql://user:pass@localhost/drupal_test#"/>
+  </php>
+  <testsuites>
+    <testsuite name="amalek">
+      <directory>modules/custom/dictionary_test/tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

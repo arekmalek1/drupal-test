@@ -6,11 +6,11 @@ use Drupal\dictionary_test\Entity\DictionaryTest;
 
 class DictionaryModel
 {
-  private $id;
-  private $type;
-  private $title;
-  private $word;
-  private $createdAt;
+  private string $id;
+  private string $type;
+  private string $title;
+  private string $word;
+  private int $createdAt;
 
   public function __construct(
       string $id,
@@ -29,11 +29,11 @@ class DictionaryModel
   public static function fromEntity(DictionaryTest $dictionary): self
   {
       return new self(
-        $dictionary->id(),
-        $dictionary->bundle(),
-        $dictionary->getTitle(),
-        $dictionary->get('field_wyraz')->value,
-        $dictionary->getCreatedTime()
+	      $dictionary->id(),
+	      $dictionary->bundle(),
+	      $dictionary->getTitle(),
+	      $dictionary->get('field_wyraz')->value,
+	      $dictionary->getCreatedTime()
       );
   }
 
