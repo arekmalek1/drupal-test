@@ -1,0 +1,11 @@
+services:
+  dictionary_test.mycustom_access_check:
+    class: Drupal\dictionary_test\Access\MyCustomAccessCheck
+    arguments:
+      - '@entity_type.manager'
+    tags:
+      - { name: access_check, applies_to: _mycustom_access_check }
+
+  Drupal\dictionary_test\Routing\DictionaryTestRouteSubscriber:
+    tags:
+      - { name: event_subscriber }
