@@ -12,3 +12,6 @@ view dictionary test:
   title: View dictionary test
 edit dictionary test:
   title: Edit dictionary test
+
+permission_callbacks:
+  - \Drupal\dictionary_test\DynamicPermissions::permissions
